@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid game </title>
+    <style>
+      .h2{
+        font-family: Audiowide;
+      
+        font-weight:normal;
+        text-align:center;
+    }
+    .Marquee{
+      background-color: violet;
+  }
+      .puzzle{
+        background-image:url("animal.jpg");
+        border: 1px solid black;
+        height:100px;
+        width:100px;
+      
+      }
+      .Animal{
+        background-image:url("animal.jpg");
+        border: 2px solid black;
+        height:400px;
+        width:400px;
+      
+        
+      }
+
+      .part1{
+        border:1px solid black;
+        background-position: 100px 100px;
+      }
+      .part2{
+        border:1px solid black;
+        background-position: 300px 0px;
+      }
+      .part3{
+        border:1px solid black;
+        background-position: 200px 200px;
+      }
+      .part4{
+        border:1px solid black;
+        background-position: 100px 0px;
+      }
+      
+      .part5{
+        border:1px solid black;
+        background-position: 0px 300px;
+      }
+      .part6{
+        border:1px solid black;
+        background-position: 300px 100px;
+      }
+      .part7{
+        border:1px solid black;
+        background-position: 200px 300px;
+      }
+      .part8{
+        border:1px solid black;
+        background-position: 300px 200px;
+      }
+      
+      .part9{
+        border:1px solid black;
+        background-position: 0px 200px;
+      }
+      .part10{
+        border:1px solid black;
+        background-position: 100px 300px;
+      }
+      .part11{
+        border:1px solid black;
+        background-position: 200px 0px;
+      }
+      .part12{
+        border:1px solid black;
+        background-position: 200px 100px;
+      }
+      
+      .part13{
+        border:1px solid black;
+        background-position: 0px 100px;
+      }
+      .part14{
+        border:1px solid black;
+        background-position: 300px 300px;
+      }
+      .part15{
+        border:1px solid black;
+        background-position: 100px 200px;
+      }
+      .part16{
+        border:1px solid black;
+        background-position: 0px 0px;
+      }
+      .main div {
+       display:inline-block;
+      }
+    </style>
+</head>
+<body>
+  <h2 class="h2">Image Puzzle</h2>
+  <Marquee class="Marquee">LETS PLAY</Marquee>
+  <div class="main">
+  <div id="part1-main"  ondrop="drop(event)" ondragover="allowDrop(event)" >
+     <div id="part1" class="puzzle part1" draggable=true ondragstart="drag(event)"></div>
+  </div>
+  <div id="part2-main"  ondrop="drop(event)" ondragover="allowDrop(event)" >
+     <div id="part2" class="puzzle part2" draggable=true ondragstart="drag(event)"></div>
+  </div>
+  <div id="part3-main"  ondrop="drop(event)" ondragover="allowDrop(event)" >
+     <div id="part3" class="puzzle part3" draggable=true ondragstart="drag(event)"></div>
+  </div>
+  <div id="part4-main"  ondrop="drop(event)" ondragover="allowDrop(event)" >
+     <div id="part4" class="puzzle part4" draggable=true ondragstart="drag(event)"></div>
+  </div>
+  
+</div>
+  <div class="main">
+  <div id="part5-main"  ondrop="drop(event)" ondragover="allowDrop(event)" >
+     <div id="part5" class="puzzle part5" draggable=true ondragstart="drag(event)"></div>
+  </div>
+  <div id="part6-main"  ondrop="drop(event)" ondragover="allowDrop(event)" >
+     <div id="part6" class="puzzle part6" draggable=true ondragstart="drag(event)"></div>
+  </div>
+  <div id="part7-main"  ondrop="drop(event)" ondragover="allowDrop(event)" >
+     <div id="part7" class="puzzle part7" draggable=true ondragstart="drag(event)"></div>
+  </div>
+  <div id="part8-main"  ondrop="drop(event)" ondragover="allowDrop(event)" >
+     <div id="part8" class="puzzle part8" draggable=true ondragstart="drag(event)"></div>
+  </div>
+  
+</div>
+  <div class="main">
+  <div id="part9-main"  ondrop="drop(event)" ondragover="allowDrop(event)" >
+     <div id="part9" class="puzzle part9" draggable=true ondragstart="drag(event)"></div>
+  </div>
+  <div id="part10-main"  ondrop="drop(event)" ondragover="allowDrop(event)" >
+     <div id="part10" class="puzzle part10" draggable=true ondragstart="drag(event)"></div>
+  </div>
+  <div id="part11-main"  ondrop="drop(event)" ondragover="allowDrop(event)" >
+     <div id="part11" class="puzzle part11" draggable=true ondragstart="drag(event)"></div>
+  </div>
+  <div id="part12-main"  ondrop="drop(event)" ondragover="allowDrop(event)" >
+     <div id="part12" class="puzzle part12" draggable=true ondragstart="drag(event)"></div>
+  </div>
+  
+</div>
+  <div class="main">
+  <div id="part13-main"  ondrop="drop(event)" ondragover="allowDrop(event)" >
+     <div id="part13" class="puzzle part13" draggable=true ondragstart="drag(event)"></div>
+  </div>
+  <div id="part14-main"  ondrop="drop(event)" ondragover="allowDrop(event)" >
+     <div id="part14" class="puzzle part14" draggable=true ondragstart="drag(event)"></div>
+  </div>
+  <div id="part15-main"  ondrop="drop(event)" ondragover="allowDrop(event)" >
+     <div id="part15" class="puzzle part15" draggable=true ondragstart="drag(event)"></div>
+  </div>
+  <div id="part16-main"  ondrop="drop(event)" ondragover="allowDrop(event)" >
+     <div id="part16" class="puzzle part16" draggable=true ondragstart="drag(event)"></div>
+  </div>
+  
+</div>
+
+  <div class="Animal"></div>
+  <script>
+  function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+  ev.dataTransfer.setData("parent",ev.path[1].id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  var parent=ev.dataTransfer.getData("parent");
+  var parentdiv=document.getElementById(parent);
+  var alreadypresentimage=document.getElementById(ev.path[0].id);
+  var newimage=document.getElementById(data);
+
+  var secondparentdiv=document.getElementById(ev.path[1].id);
+  parentdiv.removeChild(newimage);
+  parentdiv.appendChild(alreadypresentimage);
+  secondparentdiv.appendChild(newimage);
+  
+}
+  </script>
+   
+  
+</body>
+</html>
